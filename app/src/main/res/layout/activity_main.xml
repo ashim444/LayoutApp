@@ -10,62 +10,77 @@
         android:id="@+id/main_company_name_text_view"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
         android:text="@string/app_name"
         android:textSize="36sp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
 
-    <EditText
-        android:id="@+id/main_user_name_edit_text"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_username_edit_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/main_company_name_text_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/main_user_namehint" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_password_edit_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/main_user_namehint"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
-        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toBottomOf="@+id/main_username_edit_text">
 
-    <EditText
-        android:id="@+id/main_password_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:inputType="textWebPassword"
-        android:text="@string/main_passwordhint"
-        app:layout_constraintEnd_toEndOf="@+id/main_user_name_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/main_user_name_edit_text"
-        app:layout_constraintTop_toBottomOf="@+id/main_user_name_edit_text" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/main_passwordhint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <CheckBox
+
         android:id="@+id/main_remember_me_checkbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+
+        android:layout_marginTop="16dp"
         android:text="@string/main_check_box_rememberme"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_fogot_password_textview"
-        app:layout_constraintStart_toStartOf="@+id/main_password_edit_text" />
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
     <TextView
         android:id="@+id/main_fogot_password_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/main_fogot_password_string"
-        app:layout_constraintEnd_toEndOf="@+id/main_password_edit_text"
-        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toEndOf="@+id/main_remember_me_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
@@ -73,11 +88,10 @@
         android:id="@+id/main_login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="@string/main_login_button_string"
-        app:layout_constraintEnd_toEndOf="@+id/main_password_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/main_password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_remember_me_checkbox" />
 
     <Button
@@ -85,37 +99,36 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/main_twiter_image_text"
         app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
-        app:layout_constraintEnd_toEndOf="@+id/main_password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <Button
         android:id="@+id/main_facebook_image_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/main_facebook_Imagebutton_text"
         app:layout_constraintBaseline_toBaselineOf="@+id/twiter_image_text"
         app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
-        app:layout_constraintStart_toStartOf="@+id/main_password_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <Button
         android:id="@+id/main_signup_email_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:text="@string/main_sign_up_email_string"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/main_password_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/main_password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
