@@ -18,7 +18,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.18" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -65,48 +65,50 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-
-        android:layout_marginTop="16dp"
+        android:textSize="10sp"
+        android:layout_marginTop="32dp"
         android:text="@string/main_check_box_rememberme"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_fogot_password_textview"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/main_fogot_password_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:textSize="10sp"
         android:text="@string/main_fogot_password_string"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toEndOf="@+id/main_remember_me_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/main_login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@color/color_light_blue"
         android:text="@string/main_login_button_string"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_remember_me_checkbox" />
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/twiter_image_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/main_twiter_image_text"
-        app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/main_facebook_image_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -119,16 +121,18 @@
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/main_signup_email_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textSize="15sp"
+        android:textColor="@color/color_light_blue"
         android:text="@string/main_sign_up_email_string"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
+        app:layout_constraintTop_toBottomOf="@+id/twiter_image_text"
+        android:background="@drawable/main_custom_signup_email_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
