@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:textColor="@color/color_light_blue"
         android:text="@string/main_sign_up_email_string"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
