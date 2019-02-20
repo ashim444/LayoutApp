@@ -2,19 +2,19 @@
     <string name="app_name">LayoutApp</string>
 
 
-    <string name="check_Box_RememberMe">Remember Me</string>
+    <string name="main_check_box_rememberme">Remember Me</string>
 
-    <string name="fogot_Password_string">Fogot password</string>
+    <string name="main_fogot_password_string">Fogot password</string>
 
-    <string name="login_button_string">Login</string>
+    <string name="main_login_button_string">Login</string>
 
-    <string name="signUpWithEmailButton">Sign up with E-mail</string>
+    <string name="main_sign_up_email_string">Sign up with E-mail</string>
 
-    <string name="facebookImageButtonText">FaceBook</string>
+    <string name="main_facebook_Imagebutton_text">FaceBook</string>
 
-    <string name="twiterImageText">Twiter</string>
+    <string name="main_twiter_image_text">Twiter</string>
 
-    <string name="userNameHint">User Name</string>
+    <string name="main_user_namehint">User Name</string>
 
-    <string name="passwordHint">Password</string>
+    <string name="main_passwordhint">Password</string>
 </resources>

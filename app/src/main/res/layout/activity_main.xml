@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/companyNameTextView"
+        android:id="@+id/main_company_name_TextView"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -21,101 +21,101 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <EditText
-        android:id="@+id/userNameEditText"
+        android:id="@+id/main_user_name_edittext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/userNameHint"
+        android:hint="@string/main_user_namehint"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/companyNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/main_company_name_TextView"
         app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="@+id/companyNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/main_company_name_TextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.333" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/main_password_edittext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="textWebPassword"
-        android:text="@string/passwordHint"
-        app:layout_constraintEnd_toEndOf="@+id/userNameEditText"
-        app:layout_constraintStart_toStartOf="@+id/userNameEditText"
-        app:layout_constraintTop_toBottomOf="@+id/userNameEditText" />
+        android:text="@string/main_passwordhint"
+        app:layout_constraintEnd_toEndOf="@+id/main_user_name_edittext"
+        app:layout_constraintStart_toStartOf="@+id/main_user_name_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_user_name_edittext" />
 
     <CheckBox
-        android:id="@+id/rememberMeCheckBox"
+        android:id="@+id/main_remember_me_checkbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="@string/check_Box_RememberMe"
-        app:layout_constraintBaseline_toBaselineOf="@+id/fogotPasswordTextView"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText" />
+        android:text="@string/main_check_box_rememberme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_fogot_password_textview"
+        app:layout_constraintStart_toStartOf="@+id/main_password_edittext" />
 
     <TextView
-        android:id="@+id/fogotPasswordTextView"
+        android:id="@+id/main_fogot_password_textview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:text="@string/fogot_Password_string"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        android:text="@string/main_fogot_password_string"
+        app:layout_constraintEnd_toEndOf="@+id/main_password_edittext"
         app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toEndOf="@+id/rememberMeCheckBox"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+        app:layout_constraintStart_toEndOf="@+id/main_remember_me_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/main_password_edittext" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/main_login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="@string/login_button_string"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/rememberMeCheckBox" />
+        android:text="@string/main_login_button_string"
+        app:layout_constraintEnd_toEndOf="@+id/main_password_edittext"
+        app:layout_constraintStart_toStartOf="@+id/main_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_remember_me_checkbox" />
 
     <Button
-        android:id="@+id/twiterImageText"
+        android:id="@+id/twiter_image_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/twiterImageText"
-        app:layout_constraintBottom_toTopOf="@+id/signUpWithEmailButton"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        android:text="@string/main_twiter_image_text"
+        app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
+        app:layout_constraintEnd_toEndOf="@+id/main_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <Button
-        android:id="@+id/facebookImageButton"
+        android:id="@+id/main_facebook_image_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/facebookImageButtonText"
-        app:layout_constraintBaseline_toBaselineOf="@+id/twiterImageText"
-        app:layout_constraintBottom_toTopOf="@+id/signUpWithEmailButton"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        android:text="@string/main_facebook_Imagebutton_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twiter_image_text"
+        app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
+        app:layout_constraintStart_toStartOf="@+id/main_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <Button
-        android:id="@+id/signUpWithEmailButton"
+        android:id="@+id/main_signup_email_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/signUpWithEmailButton"
+        android:text="@string/main_sign_up_email_string"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        app:layout_constraintEnd_toEndOf="@+id/main_password_edittext"
+        app:layout_constraintStart_toStartOf="@+id/main_password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
