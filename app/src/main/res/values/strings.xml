@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">LayoutApp</string>
+
+
+    <string name="check_Box_RememberMe">Remember Me</string>
+
+    <string name="fogot_Password_string">Fogot password</string>
+
+    <string name="login_button_string">Login</string>
+
+    <string name="signUpWithEmailButton">Sign Up with E-mail</string>
+
+    <string name="facebookImageButtonText">FaceBook</string>
+
+    <string name="twiterImageText">Twitter</string>
+
+    <string name="userNameHint">User Name</string>
+
+    <string name="passwordHint">Password</string>
 </resources>
