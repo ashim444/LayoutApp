@@ -29,7 +29,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizental_constraints"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
-            app:srcCompat="@drawable/deawable_second_person_icon" />
+            app:srcCompat="@drawable/ic_second_person_icon" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/second_appbar_constraints"
@@ -48,7 +48,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizental_constraints"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
-            app:srcCompat="@drawable/drawable_second_message_icon" />
+            app:srcCompat="@drawable/ic_second_message" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -61,7 +61,7 @@
             app:layout_constraintEnd_toEndOf="@+id/second_toolbar_horizental_constraints"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
-            app:srcCompat="@drawable/drawable_second_addperson_icon" />
+            app:srcCompat="@drawable/ic_second_person" />
 
         <TextView
             android:id="@+id/second_name_text_view"
@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="357dp" />
+            app:layout_constraintGuide_begin="321dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/second_recycle_view"

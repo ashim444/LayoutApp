@@ -32,6 +32,8 @@ public class SecondActivity extends AppCompatActivity {
         secondCharacters.add(new SecondCharacter(R.drawable.ic_launcher_background, R.string.second_recycleview_itemdate, R.string.second_recycleview_item1));
         secondCharacters.add(new SecondCharacter(R.drawable.ic_launcher_background, R.string.second_recycleview_itemdate, R.string.second_recycleview_item2));
         RecyclerView secondRecycleView = findViewById(R.id.second_recycle_view);
+        int secondSpaceInPixel =  getResources().getDimensionPixelSize(R.dimen.secondGridSpacing);
+        secondRecycleView.addItemDecoration(new SecondRecycleSpaces(secondSpaceInPixel));
         secondRecycleView.setLayoutManager(new GridLayoutManager(this, 2));
         SecondAdapter secondAdapter = new SecondAdapter(secondCharacters);
 
