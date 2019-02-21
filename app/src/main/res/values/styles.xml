@@ -9,5 +9,15 @@
 
     </style>
 
+    <style name="secondNumberDesign">
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="secondTextDesign">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10sp</item>
+    </style>
 
 </resources>

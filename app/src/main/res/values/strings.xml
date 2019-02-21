@@ -30,4 +30,8 @@
     <string name="second_recycleview_item2">has been the industrys standard dummy text ever  </string>
 
     <string name="second_recycleview_itemdate">21 Nov 2016</string>
+
+    <string name="second_dummy_number">123</string>
+
+    <string name="second_dummy_name">following</string>
 </resources>
