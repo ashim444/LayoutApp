@@ -17,7 +17,7 @@
 
     <style name="secondTextDesign">
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">11sp</item>
     </style>
 
 </resources>
