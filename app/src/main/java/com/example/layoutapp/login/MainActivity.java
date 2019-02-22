@@ -1,11 +1,10 @@
-package com.example.layoutapp;
-
+package com.example.layoutapp.login;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import com.example.layoutapp.R;
+import com.example.layoutapp.SecondActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -13,12 +12,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ((Button)findViewById(R.id.main_login_button)).setOnClickListener(this);
+        findViews();
+    }
+
+    private void findViews() {
+        findViewById(R.id.main_login_button).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.main_login_button:
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
         }

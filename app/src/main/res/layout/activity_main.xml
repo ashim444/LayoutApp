@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".login.MainActivity">
 
     <TextView
         android:id="@+id/main_company_name_text_view"
@@ -37,7 +36,7 @@
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="@string/main_user_namehint" />
+            android:hint="@string/user_name_hint" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,34 +54,33 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/main_passwordhint" />
+            android:hint="@string/password" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <CheckBox
-
         android:id="@+id/main_remember_me_checkbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textSize="10sp"
         android:layout_marginTop="32dp"
-        android:text="@string/main_check_box_rememberme"
+        android:text="@string/remember_me"
+        android:textSize="10sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_fogot_password_textview"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_fogot_password_textview"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:text="@string/fogot_password_string"
         android:textSize="10sp"
-        android:text="@string/main_fogot_password_string"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toEndOf="@+id/main_remember_me_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
@@ -93,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@color/color_light_blue"
-        android:text="@string/main_login_button_string"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_remember_me_checkbox" />
@@ -105,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/main_twiter_image_text"
+        android:text="@string/twiter"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
@@ -116,7 +114,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/main_facebook_Imagebutton_text"
+        android:text="@string/facebook"
         app:layout_constraintBaseline_toBaselineOf="@+id/twiter_image_text"
         app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
         app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
@@ -130,7 +128,7 @@
         android:layout_marginTop="32dp"
 
         android:layout_marginBottom="32dp"
-        android:text="@string/main_sign_up_email_string"
+        android:text="@string/sign_up_email"
         android:textColor="@color/color_light_blue"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

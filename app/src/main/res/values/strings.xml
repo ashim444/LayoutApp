@@ -1,37 +1,35 @@
 <resources>
     <string name="app_name">LayoutApp</string>
 
+    <string name="remember_me">Remember Me</string>
 
-    <string name="main_check_box_rememberme">Remember Me</string>
+    <string name="fogot_password_string">Fogot password</string>
 
-    <string name="main_fogot_password_string">Fogot password</string>
+    <string name="login">Login</string>
 
-    <string name="main_login_button_string">Login</string>
+    <string name="sign_up_email">Sign up with E-mail</string>
 
-    <string name="main_sign_up_email_string">Sign up with E-mail</string>
+    <string name="facebook">FaceBook</string>
 
-    <string name="main_facebook_Imagebutton_text">FaceBook</string>
+    <string name="twiter">Twiter</string>
 
-    <string name="main_twiter_image_text">Twiter</string>
+    <string name="user_name_hint">User Name</string>
 
-    <string name="main_user_namehint">User Name</string>
+    <string name="password">Password</string>
 
-    <string name="main_passwordhint">Password</string>
+    <string name="follower">Follower</string>
 
-    <string name="second_follower_text">Follower</string>
+    <string name="post_text">Posts</string>
 
-    <string name="second_post_text">Posts</string>
+    <string name="following_text">Following</string>
 
-    <string name="second_following_text">Following</string>
+    <string name="long_dummy_text">Lorem Ipsum is simply dummy text of the printing</string>
 
+    <string name="dummy_texts">has been the industrys standard dummy text ever  </string>
 
-    <string name="second_recycleview_item1">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="dummy_date">21 Nov 2016</string>
 
-    <string name="second_recycleview_item2">has been the industrys standard dummy text ever  </string>
+    <string name="dummy_number">123</string>
 
-    <string name="second_recycleview_itemdate">21 Nov 2016</string>
-
-    <string name="second_dummy_number">123</string>
-
-    <string name="second_dummy_name">following</string>
+    <string name="dummy_name">following</string>
 </resources>
