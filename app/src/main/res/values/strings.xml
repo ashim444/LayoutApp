@@ -23,11 +23,13 @@
 
     <string name="following_text">Following</string>
 
-    <string name="long_dummy_text">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="dummy_text_heading">Lorem Ipsum Is dummy</string>
 
-    <string name="dummy_texts">has been the industrys standard dummy text ever  </string>
+    <string name="dummy_texts">has been the industrys standard dummy text ever</string>
 
     <string name="dummy_date">21 Nov 2016</string>
+
+    <string name="order_text">Order Now</string>
 
     <string name="dummy_number">123</string>
 

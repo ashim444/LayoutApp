@@ -1,8 +1,10 @@
-package com.example.layoutapp;
+package com.example.layoutapp.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+
+import com.example.layoutapp.R;
 import com.example.layoutapp.adapter.SecondAdapter;
 import com.example.layoutapp.model.SecondCharacter;
 import java.util.ArrayList;
