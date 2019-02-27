@@ -9,7 +9,7 @@
 
     <string name="sign_up_email">Sign up with E-mail</string>
 
-    <string name="facebook">FaceBook</string>
+    <string name="facebook">Facebook</string>
 
     <string name="twiter">Twiter</string>
 
@@ -19,6 +19,10 @@
 
     <string name="follower">Follower</string>
 
+    <string name="F">F</string>
+
+
+    <string name="T">t</string>
     <string name="post_text">Posts</string>
 
     <string name="following_text">Following</string>

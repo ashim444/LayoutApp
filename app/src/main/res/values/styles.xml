@@ -10,6 +10,9 @@
     </style>
 
 
+
+
+
     <style name="bold15spTxtDesign">
     <item name="android:gravity">center_horizontal</item>
     <item name="android:textSize">15sp</item>
@@ -20,5 +23,7 @@
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">11sp</item>
     </style>
+
+
 
 </resources>

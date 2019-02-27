@@ -28,14 +28,14 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizental_constraints"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
-            app:srcCompat="@drawable/ic_second_person_icon" />
+            app:srcCompat="@drawable/ic_account_circle" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/second_appbar_constraints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="111dp" />
+            app:layout_constraintGuide_begin="88dp" />
 
         <ImageView
             android:id="@+id/second_message_image"
@@ -162,7 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="321dp" />
+            app:layout_constraintGuide_begin="301dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/second_recycle_view"
@@ -176,6 +176,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/second_follower_text" />
+
+        <ImageView
+            android:id="@+id/second_android_image_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintCircle="@id/second_android_image"
+            app:layout_constraintCircleAngle="320"
+            app:layout_constraintCircleRadius="50dp"
+            app:srcCompat="@drawable/ic_text_sms" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

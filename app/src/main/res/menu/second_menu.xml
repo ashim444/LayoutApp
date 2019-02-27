@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/second_menu_share_icon"
-        android:icon="@drawable/ic_second_share_icon"
+        android:icon="@drawable/ic_bluetooth_icon"
         android:title=""
         app:showAsAction="always" />
 </menu>

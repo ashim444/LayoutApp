@@ -2,14 +2,11 @@ package com.example.layoutapp.UI;
 
 import android.os.Bundle;
 import android.view.Menu;
-
 import com.example.layoutapp.R;
 import com.example.layoutapp.adapter.DeliveryAdapter;
 import com.example.layoutapp.model.CharacterClass;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,6 +19,7 @@ public class DelivaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivary);
         addToolBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         addRecycleView(dummyContent());
     }
 
@@ -53,6 +51,7 @@ public class DelivaryActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.delivary_menu, menu);

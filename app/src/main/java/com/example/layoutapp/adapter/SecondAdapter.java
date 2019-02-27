@@ -30,9 +30,9 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         CharacterClass secondAdapterCharacter = this.secondAdapterCharacter.get(holder.getAdapterPosition());
-        holder.viewHolderImageView.setImageResource(secondAdapterCharacter.getCharacterClassImage());
-        holder.viewHolderDateInfo.setText(secondAdapterCharacter.getCharacterClassDummyTextOne());
-        holder.viewHolderInfoText.setText(secondAdapterCharacter.getCharacterClassDummyTextTwo());
+        holder.dummyImageView.setImageResource(secondAdapterCharacter.getCharacterClassImage());
+        holder.dummyDateInfo.setText(secondAdapterCharacter.getCharacterClassDummyTextOne());
+        holder.dummyInfoText.setText(secondAdapterCharacter.getCharacterClassDummyTextTwo());
     }
 
     @Override
@@ -41,15 +41,15 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView viewHolderImageView;
-        public TextView viewHolderDateInfo;
-        public TextView viewHolderInfoText;
+        public ImageView dummyImageView;
+        public TextView dummyDateInfo;
+        public TextView dummyInfoText;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            viewHolderImageView = itemView.findViewById(R.id.item_second_image);
-            viewHolderDateInfo = itemView.findViewById(R.id.item_second_text_date);
-            viewHolderInfoText = itemView.findViewById(R.id.item_second_text);
+            dummyImageView = itemView.findViewById(R.id.item_second_image);
+            dummyDateInfo = itemView.findViewById(R.id.item_second_text_date);
+            dummyInfoText = itemView.findViewById(R.id.item_second_text);
         }
     }
 }

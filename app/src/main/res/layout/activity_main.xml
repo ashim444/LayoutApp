@@ -6,69 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".UI.MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="53dp" />
+
     <TextView
         android:id="@+id/main_company_name_text_view"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="@string/app_name"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.100000024" />
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_username_edit_text"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/main_company_name_text_view">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="325dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:hint="@string/user_name_hint" />
-
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_password_edit_text"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/main_username_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/main_username_edit_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password" />
-
+            android:hint="@string/password"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <CheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/main_remember_me_checkbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="@string/remember_me"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/main_fogot_password_textview"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/main_fogot_password_textview"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
     <com.google.android.material.button.MaterialButton
@@ -80,8 +89,11 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="@string/fogot_password_string"
-        android:textSize="10sp"
+        android:textSize="12sp"
+
+        android:textColor="@color/colorBlack"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/main_remember_me_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/main_password_edit_text" />
 
@@ -89,35 +101,52 @@
         android:id="@+id/main_login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:background="@color/color_light_blue"
         android:text="@string/login"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/colorDarkBlue"
+        app:cornerRadius="@dimen/standard_spacing_20"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/main_remember_me_checkbox" />
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/twiter_image_text"
+        style="@style/bold15spTxtDesign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/twiter"
+        android:text="T"
+        app:backgroundTint="@color/colorLightBlue"
+        app:cornerRadius="@dimen/standard_spacing_20"
+        app:iconGravity="start"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_facebook_image_button"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_facebook_image_button"
+        style="@style/bold15spTxtDesign"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/facebook"
+        android:text="@string/F"
+        app:backgroundTint="@color/colorDarkBlue"
+        app:cornerRadius="@dimen/standard_spacing_20"
         app:layout_constraintBaseline_toBaselineOf="@+id/twiter_image_text"
         app:layout_constraintBottom_toTopOf="@+id/main_signup_email_button"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/twiter_image_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/main_login_button" />
 
     <com.google.android.material.button.MaterialButton
@@ -125,15 +154,19 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="32dp"
         android:text="@string/sign_up_email"
-        android:textColor="@color/color_light_blue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkBlue"
         android:textSize="16sp"
+        app:cornerRadius="@dimen/standard_spacing_20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/main_company_name_text_view"
-        app:layout_constraintStart_toStartOf="@+id/main_company_name_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/twiter_image_text" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/twiter_image_text"
+        app:layout_constraintVertical_bias="0.32"
+        app:strokeColor="@color/colorLightBlue"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
