@@ -12,7 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class DelivaryActivity extends AppCompatActivity {
+public class DeliveryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class DelivaryActivity extends AppCompatActivity {
     }
 
     private void addToolBar() {
-        Toolbar secondToolBar = findViewById(R.id.delivary_toolbar);
+        Toolbar secondToolBar = findViewById(R.id.delivery_toolbar);
         secondToolBar.setTitle(R.string.facebook);
         setSupportActionBar(secondToolBar);
     }
@@ -41,7 +41,7 @@ public class DelivaryActivity extends AppCompatActivity {
     }
 
     private void addRecycleView(List<CharacterClass> dummyContent) {
-        RecyclerView delivaryRecycler = findViewById(R.id.delivary_navigation_recycler);
+        RecyclerView delivaryRecycler = findViewById(R.id.delivery_navigation_recycler);
         delivaryRecycler.setAdapter(new DeliveryAdapter(dummyContent));
         delivaryRecycler.setNestedScrollingEnabled(false);
         delivaryRecycler.setLayoutManager(new LinearLayoutManager(this){

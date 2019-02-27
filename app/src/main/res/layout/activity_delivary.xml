@@ -6,25 +6,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".UI.DelivaryActivity">
+    tools:context=".UI.DeliveryActivity">
     <include
-        android:id="@+id/delivary_toolbar"
+        android:id="@+id/delivery_toolbar"
         layout="@layout/second_toolbar"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/delivary_nested_Scroll"
+        android:id="@+id/delivery_nested_Scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/delivary_toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/delivery_toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/delivary_top_info"
+                android:id="@+id/delivery_top_info"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:cardUseCompatPadding="true"
@@ -39,7 +39,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/delivary_background_image"
+                        android:id="@+id/delivery_background_image"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:scaleType="centerCrop"
@@ -51,9 +51,9 @@
                         app:srcCompat="@drawable/ic_launcher_background" />
 
                     <TextView
-                        android:id="@+id/delivary_main_heading"
+                        android:id="@+id/delivery_main_heading"
                         android:layout_width="wrap_content"
-                        android:layout_height="29dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="@string/dummy_text_heading"
                         android:textAppearance="?android:textAppearanceLarge"
@@ -62,30 +62,30 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.502"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/delivary_guideline1" />
+                        app:layout_constraintTop_toTopOf="@+id/delivery_guideline1" />
 
                     <androidx.constraintlayout.widget.Guideline
-                        android:id="@+id/delivary_guideline1"
+                        android:id="@+id/delivery_guideline1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         app:layout_constraintGuide_begin="61dp" />
 
                     <TextView
-                        android:id="@+id/delivary_heading_info"
-                        android:layout_width="324dp"
+                        android:id="@+id/delivery_heading_info"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="8dp"
                         android:text="@string/dummy_texts"
                         android:textAppearance="?android:textAppearanceSmall"
                         android:textColor="@color/colorWhite"
-                        app:layout_constraintEnd_toEndOf="@+id/delivary_main_heading"
-                        app:layout_constraintStart_toStartOf="@+id/delivary_main_heading"
-                        app:layout_constraintTop_toBottomOf="@+id/delivary_main_heading" />
+                        app:layout_constraintEnd_toEndOf="@+id/delivery_main_heading"
+                        app:layout_constraintStart_toStartOf="@+id/delivery_main_heading"
+                        app:layout_constraintTop_toBottomOf="@+id/delivery_main_heading" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/delivary_order_button"
+                        android:id="@+id/delivery_order_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
@@ -93,14 +93,14 @@
                         android:text="@string/order_text"
                         app:cornerRadius="@dimen/standard_spacing_20"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/delivary_main_heading"
-                        app:layout_constraintStart_toStartOf="@+id/delivary_main_heading"
-                        app:layout_constraintTop_toBottomOf="@+id/delivary_heading_info" />
+                        app:layout_constraintEnd_toEndOf="@+id/delivery_main_heading"
+                        app:layout_constraintStart_toStartOf="@+id/delivery_main_heading"
+                        app:layout_constraintTop_toBottomOf="@+id/delivery_heading_info" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/delivary_navigation_recycler"
+                android:id="@+id/delivery_navigation_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -108,7 +108,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/delivary_top_info"
+                app:layout_constraintTop_toBottomOf="@id/delivery_top_info"
                 tools:listitem="@layout/list_item_delivery" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

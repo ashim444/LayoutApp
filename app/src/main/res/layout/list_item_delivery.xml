@@ -62,4 +62,5 @@
         app:layout_constraintHorizontal_weight="1.5"
         app:layout_constraintStart_toEndOf="@+id/item_delivary_icon_text_heading"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.main_signup_email_button:
-                startActivity(new Intent(MainActivity.this, DelivaryActivity.class));
+                startActivity(new Intent(MainActivity.this, DeliveryActivity.class));
                 break;
         }
     }
