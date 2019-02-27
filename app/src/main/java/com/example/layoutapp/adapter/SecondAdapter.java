@@ -6,15 +6,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.layoutapp.R;
-import com.example.layoutapp.model.SecondCharacter;
+import com.example.layoutapp.model.CharacterClass;
 import java.util.List;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder> {
 
-    private List<SecondCharacter> secondAdapterCharacter;
+    private List<CharacterClass> secondAdapterCharacter;
 
-    public SecondAdapter(List<SecondCharacter> secondAdapterCharacter) {
+    public SecondAdapter(List<CharacterClass> secondAdapterCharacter) {
         this.secondAdapterCharacter = secondAdapterCharacter;
     }
 
@@ -29,10 +29,10 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        SecondCharacter secondAdapterCharacter = this.secondAdapterCharacter.get(holder.getAdapterPosition());
-        holder.viewHolderImageView.setImageResource(secondAdapterCharacter.getSecondCharacterImage());
-        holder.viewHolderDateInfo.setText(secondAdapterCharacter.getSecondCharacterDummyDate());
-        holder.viewHolderInfoText.setText(secondAdapterCharacter.getSecondCharacterDummyText());
+        CharacterClass secondAdapterCharacter = this.secondAdapterCharacter.get(holder.getAdapterPosition());
+        holder.viewHolderImageView.setImageResource(secondAdapterCharacter.getCharacterClassImage());
+        holder.viewHolderDateInfo.setText(secondAdapterCharacter.getCharacterClassDummyTextOne());
+        holder.viewHolderInfoText.setText(secondAdapterCharacter.getCharacterClassDummyTextTwo());
     }
 
     @Override

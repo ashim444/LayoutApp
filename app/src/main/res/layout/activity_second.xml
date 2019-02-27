@@ -13,7 +13,7 @@
 
         <include
             android:id="@+id/second_toolbar_horizental_constraints"
-            layout="@layout/toolbar"
+            layout="@layout/second_toolbar"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -64,7 +64,7 @@
 
         <TextView
             android:id="@+id/second_name_text"
-            style="@style/secondNumberDesign"
+            style="@style/bold15spTxtDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -80,14 +80,14 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/long_dummy_text"
+            android:text="@string/dummy_texts"
             app:layout_constraintEnd_toEndOf="@+id/second_smile_image"
             app:layout_constraintStart_toStartOf="@+id/second_message_image"
             app:layout_constraintTop_toBottomOf="@+id/second_name_text" />
 
         <TextView
             android:id="@+id/second_follower_number"
-            style="@style/secondNumberDesign"
+            style="@style/bold15spTxtDesign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -99,7 +99,7 @@
 
         <TextView
             android:id="@+id/second_post_number"
-            style="@style/secondNumberDesign"
+            style="@style/bold15spTxtDesign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -111,7 +111,7 @@
 
         <TextView
             android:id="@+id/second_following_number"
-            style="@style/secondNumberDesign"
+            style="@style/bold15spTxtDesign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

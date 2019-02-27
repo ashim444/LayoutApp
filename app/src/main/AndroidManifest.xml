@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".UI.DelivaryActivity"></activity>
         <activity android:name=".UI.SecondActivity" />
-        <activity android:name=".login.MainActivity">
+        <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
