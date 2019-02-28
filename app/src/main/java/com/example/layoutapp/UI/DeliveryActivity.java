@@ -41,10 +41,10 @@ public class DeliveryActivity extends AppCompatActivity {
     }
 
     private void addRecycleView(List<CharacterClass> dummyContent) {
-        RecyclerView delivaryRecycler = findViewById(R.id.delivery_navigation_recycler);
-        delivaryRecycler.setAdapter(new DeliveryAdapter(dummyContent));
-        delivaryRecycler.setNestedScrollingEnabled(false);
-        delivaryRecycler.setLayoutManager(new LinearLayoutManager(this){
+        RecyclerView deliveryRecycler        = findViewById(R.id.delivery_navigation_recycler);
+        deliveryRecycler.setAdapter(new DeliveryAdapter(dummyContent));
+        deliveryRecycler.setNestedScrollingEnabled(false);
+        deliveryRecycler.setLayoutManager(new LinearLayoutManager(this){
             @Override
             public boolean canScrollVertically() {
                 return false;

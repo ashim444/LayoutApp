@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/item_delivary_icon"
+        android:id="@+id/item_delivery_icon"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -16,7 +16,7 @@
         android:scaleType="fitCenter"
         android:src="@drawable/ic_bluetooth_icon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/item_delivary_icon_text_heading"
+        app:layout_constraintEnd_toStartOf="@+id/item_delivery_icon_text_heading"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintHorizontal_weight="2"
@@ -24,29 +24,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/item_delivary_icon_text_heading"
+        android:id="@+id/item_delivery_icon_text_heading"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintBottom_toTopOf="@+id/item_delivary_icon_info"
+        app:layout_constraintBottom_toTopOf="@+id/item_delivery_icon_info"
         app:layout_constraintEnd_toStartOf="@+id/item_delivery_ok_icon"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="4"
-        app:layout_constraintStart_toEndOf="@+id/item_delivary_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_delivery_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/item_delivary_icon_info"
+        android:id="@+id/item_delivery_icon_info"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
         android:textAppearance="?android:textAppearanceSmall"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/item_delivary_icon_text_heading"
+        app:layout_constraintEnd_toEndOf="@+id/item_delivery_icon_text_heading"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/item_delivary_icon_text_heading"
-        app:layout_constraintTop_toBottomOf="@+id/item_delivary_icon_text_heading" />
+        app:layout_constraintStart_toStartOf="@+id/item_delivery_icon_text_heading"
+        app:layout_constraintTop_toBottomOf="@+id/item_delivery_icon_text_heading" />
 
     <ImageView
         android:id="@+id/item_delivery_ok_icon"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="1.5"
-        app:layout_constraintStart_toEndOf="@+id/item_delivary_icon_text_heading"
+        app:layout_constraintStart_toEndOf="@+id/item_delivery_icon_text_heading"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

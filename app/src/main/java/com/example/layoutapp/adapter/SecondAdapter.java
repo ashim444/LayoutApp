@@ -15,16 +15,15 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     private List<CharacterClass> secondAdapterCharacter;
 
     public SecondAdapter(List<CharacterClass> secondAdapterCharacter) {
-        this.secondAdapterCharacter = secondAdapterCharacter;
+        this.secondAdapterCharacter         = secondAdapterCharacter;
     }
 
     @Override
     public SecondAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
+        LayoutInflater inflater             = LayoutInflater.from(context);
         View secondView = inflater.inflate(R.layout.list_item_second, parent, false);
-        ViewHolder viewHolder = new ViewHolder(secondView);
-        return viewHolder;
+        return new ViewHolder(secondView);
     }
 
     @Override
@@ -41,15 +40,15 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView dummyImageView;
-        public TextView dummyDateInfo;
-        public TextView dummyInfoText;
+        public ImageView                dummyImageView;
+        public TextView                 dummyDateInfo;
+        public TextView                 dummyInfoText;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            dummyImageView = itemView.findViewById(R.id.item_second_image);
-            dummyDateInfo = itemView.findViewById(R.id.item_second_text_date);
-            dummyInfoText = itemView.findViewById(R.id.item_second_text);
+            dummyImageView              = itemView.findViewById(R.id.item_second_image);
+            dummyDateInfo               = itemView.findViewById(R.id.item_second_text_date);
+            dummyInfoText               = itemView.findViewById(R.id.item_second_text);
         }
     }
 }

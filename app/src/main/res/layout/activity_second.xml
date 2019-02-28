@@ -12,7 +12,7 @@
         tools:context=".UI.SecondActivity">
 
         <include
-            android:id="@+id/second_toolbar_horizental_constraints"
+            android:id="@+id/second_toolbar_horizontal_constraints"
             layout="@layout/second_toolbar"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -26,7 +26,7 @@
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizental_constraints"
+            app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizontal_constraints"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
             app:srcCompat="@drawable/ic_account_circle" />
 
@@ -45,19 +45,19 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toStartOf="@+id/second_android_image"
-            app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizental_constraints"
+            app:layout_constraintStart_toStartOf="@+id/second_toolbar_horizontal_constraints"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
             app:srcCompat="@drawable/ic_second_message" />
 
         <ImageView
             android:id="@+id/second_smile_image"
-            android:layout_width="27dp"
-            android:layout_height="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="@+id/second_toolbar_horizental_constraints"
+            app:layout_constraintEnd_toEndOf="@+id/second_toolbar_horizontal_constraints"
             app:layout_constraintStart_toEndOf="@+id/second_android_image"
             app:layout_constraintTop_toTopOf="@+id/second_appbar_constraints"
             app:srcCompat="@drawable/ic_second_person" />

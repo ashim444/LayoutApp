@@ -13,10 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class DeliveryAdapter extends RecyclerView.Adapter<DeliveryAdapter.ViewHolder> {
-    private List<CharacterClass> delivaryCharacter;
+    private List<CharacterClass> deliveryCharacter;
 
-    public DeliveryAdapter(List<CharacterClass> delivaryCharacter) {
-        this.delivaryCharacter = delivaryCharacter;
+    public DeliveryAdapter(List<CharacterClass> deliveryCharacter) {
+        this.deliveryCharacter = deliveryCharacter;
     }
 
     @Override
@@ -28,32 +28,31 @@ public class DeliveryAdapter extends RecyclerView.Adapter<DeliveryAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        CharacterClass delivaryCharacterClass = delivaryCharacter.get(holder.getAdapterPosition());
-        holder.iconImage.setImageResource(delivaryCharacterClass.getCharacterClassImage());
-        holder.iconOk.setImageResource(delivaryCharacterClass.getCharacterImageTwo());
-        holder.iconTextHeading.setText(delivaryCharacterClass.getCharacterClassDummyTextOne());
-        holder.iconTextHeadingInfo.setText(delivaryCharacterClass.getCharacterClassDummyTextTwo());
+        CharacterClass deliveryCharacterClass = deliveryCharacter.get(holder.getAdapterPosition());
+        holder.iconImage.setImageResource(deliveryCharacterClass.getCharacterClassImage());
+        holder.iconOk.setImageResource(deliveryCharacterClass.getCharacterImageTwo());
+        holder.iconTextHeading.setText(deliveryCharacterClass.getCharacterClassDummyTextOne());
+        holder.iconTextHeadingInfo.setText(deliveryCharacterClass.getCharacterClassDummyTextTwo());
     }
 
     @Override
     public int getItemCount() {
-        return delivaryCharacter.size();
+        return deliveryCharacter.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView iconImage;
-        public TextView iconTextHeading;
-        public TextView iconTextHeadingInfo;
-        public ImageView iconOk;
+        public ImageView            iconImage;
+        public TextView             iconTextHeading;
+        public TextView             iconTextHeadingInfo;
+        public ImageView            iconOk;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            iconImage = itemView.findViewById(R.id.item_delivary_icon);
-            iconTextHeading = itemView.findViewById(R.id.item_delivary_icon_text_heading);
-            iconTextHeadingInfo = itemView.findViewById(R.id.item_delivary_icon_info);
+            iconImage                   = itemView.findViewById(R.id.item_delivery_icon);
+            iconTextHeading             = itemView.findViewById(R.id.item_delivery_icon_text_heading);
+            iconTextHeadingInfo         = itemView.findViewById(R.id.item_delivery_icon_info);
             iconOk = itemView.findViewById(R.id.item_delivery_ok_icon);
 
         }
     }
-
 }

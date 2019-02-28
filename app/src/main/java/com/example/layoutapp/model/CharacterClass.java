@@ -1,21 +1,21 @@
 package com.example.layoutapp.model;
 
 public class CharacterClass {
-    private int characterClassImage;
-    private int characterImageTwo;
-    private int characterClassDummyTextOne;
-    private int characterClassDummyTextTwo;
+    private int             characterClassImage;
+    private int             characterImageTwo;
+    private int             characterClassDummyTextOne;
+    private int             characterClassDummyTextTwo;
 
     public CharacterClass(int characterClassImage, int characterClassDummyTextOne, int characterClassDummyTextTwo) {
-        this.characterClassImage = characterClassImage;
-        this.characterClassDummyTextOne = characterClassDummyTextOne;
-        this.characterClassDummyTextTwo = characterClassDummyTextTwo;
+        this.characterClassImage                = characterClassImage;
+        this.characterClassDummyTextOne         = characterClassDummyTextOne;
+        this.characterClassDummyTextTwo         = characterClassDummyTextTwo;
     }
     public CharacterClass(int characterClassImage, int characterImageTwo, int characterClassDummyTextOne, int characterClassDummyTextTwo) {
-        this.characterClassImage = characterClassImage;
-        this.characterImageTwo = characterImageTwo;
-        this.characterClassDummyTextOne = characterClassDummyTextOne;
-        this.characterClassDummyTextTwo = characterClassDummyTextTwo;
+        this.characterClassImage                = characterClassImage;
+        this.characterImageTwo                  = characterImageTwo;
+        this.characterClassDummyTextOne         = characterClassDummyTextOne;
+        this.characterClassDummyTextTwo         = characterClassDummyTextTwo;
     }
 
     public int getCharacterImageTwo() {

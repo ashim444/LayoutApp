@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void setUpToolBar() {
-        Toolbar secondToolBar = findViewById(R.id.second_toolbar_horizental_constraints);
+        Toolbar secondToolBar = findViewById(R.id.second_toolbar_horizontal_constraints);
         setSupportActionBar(secondToolBar);
     }
 
