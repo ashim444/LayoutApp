@@ -78,84 +78,68 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/dummy_texts"
-            app:layout_constraintEnd_toEndOf="@+id/second_smile_image"
-            app:layout_constraintStart_toStartOf="@+id/second_message_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/second_name_text" />
 
-        <TextView
-            android:id="@+id/second_follower_number"
-            style="@style/bold15spTxtDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dummy_number"
-            app:layout_constraintEnd_toStartOf="@+id/second_post_number"
-            app:layout_constraintHorizontal_bias="0.5"
+        <View
+            android:id="@+id/second_top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
+            app:layout_constraintTop_toTopOf="@id/second_followtext_horizental_constraints" />
 
-        <TextView
-            android:id="@+id/second_post_number"
-            style="@style/bold15spTxtDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dummy_number"
-            app:layout_constraintEnd_toStartOf="@+id/second_following_number"
+        <View
+            android:id="@+id/second_vertical_view1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/second_bottom_line"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/second_follower_number"
-            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/second_top_line" />
 
-        <TextView
-            android:id="@+id/second_following_number"
-            style="@style/bold15spTxtDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dummy_number"
+
+        <View
+            android:id="@+id/second_vertical_view2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintBottom_toBottomOf="@+id/second_bottom_line"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view1"
+            app:layout_constraintTop_toTopOf="@+id/second_top_line" />
+
+        <View
+            android:id="@+id/second_vertical_view3"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintBottom_toBottomOf="@+id/second_bottom_line"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view2"
+            app:layout_constraintTop_toTopOf="@+id/second_top_line" />
+
+        <View
+            android:id="@+id/second_vertical_view4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/second_bottom_line"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/second_post_number"
-            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
-
-        <TextView
-            android:id="@+id/second_follower_text"
-            style="@style/secondTextDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/dummy_name"
-            app:layout_constraintEnd_toStartOf="@+id/second_post_text"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/second_follower_number" />
-
-        <TextView
-            android:id="@+id/second_post_text"
-            style="@style/secondTextDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/dummy_name"
-            app:layout_constraintEnd_toStartOf="@+id/second_following_text"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/second_follower_text"
-            app:layout_constraintTop_toBottomOf="@+id/second_post_number" />
-
-        <TextView
-            android:id="@+id/second_following_text"
-            style="@style/secondTextDesign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/dummy_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/second_post_text"
-            app:layout_constraintTop_toBottomOf="@+id/second_following_number" />
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view3"
+            app:layout_constraintTop_toTopOf="@+id/second_top_line" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/second_followtext_horizental_constraints"
@@ -163,6 +147,98 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="301dp" />
+
+        <TextView
+            android:id="@+id/second_follower_number"
+            style="@style/bold15spTxtDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_number"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
+
+
+        <TextView
+            android:id="@+id/second_post_number"
+            style="@style/bold15spTxtDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_number"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view3"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view2"
+            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
+
+        <TextView
+            android:id="@+id/second_following_number"
+            style="@style/bold15spTxtDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_number"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view4"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view3"
+            app:layout_constraintTop_toTopOf="@+id/second_followtext_horizental_constraints" />
+
+        <TextView
+            android:id="@+id/second_follower_text"
+            style="@style/secondTextDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_name"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view2"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view1"
+            app:layout_constraintTop_toBottomOf="@+id/second_follower_number" />
+
+        <TextView
+            android:id="@+id/second_post_text"
+            style="@style/secondTextDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_name"
+            app:layout_constraintEnd_toStartOf="@+id/second_vertical_view3"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view2"
+            app:layout_constraintTop_toBottomOf="@+id/second_post_number" />
+
+        <TextView
+            android:id="@+id/second_following_text"
+            style="@style/secondTextDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/dummy_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/second_vertical_view3"
+            app:layout_constraintTop_toBottomOf="@+id/second_following_number" />
+
+        <View
+            android:id="@+id/second_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second_follower_text" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/second_recycle_view"
@@ -175,7 +251,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/second_follower_text" />
+            app:layout_constraintTop_toBottomOf="@+id/second_bottom_line" />
 
         <ImageView
             android:id="@+id/second_android_image_top"
@@ -186,7 +262,5 @@
             app:layout_constraintCircleAngle="320"
             app:layout_constraintCircleRadius="50dp"
             app:srcCompat="@drawable/ic_text_sms" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

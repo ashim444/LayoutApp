@@ -19,13 +19,14 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         setUpToolBar();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         addingRecycleView(mockData());
     }
 
     private void setUpToolBar() {
         Toolbar secondToolBar = findViewById(R.id.second_toolbar_horizontal_constraints);
         setSupportActionBar(secondToolBar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
     private List<CharacterClass> mockData() {

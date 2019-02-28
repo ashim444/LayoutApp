@@ -2,6 +2,8 @@ package com.example.layoutapp.UI;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.TextView;
+
 import com.example.layoutapp.R;
 import com.example.layoutapp.adapter.DeliveryAdapter;
 import com.example.layoutapp.model.CharacterClass;
@@ -19,14 +21,14 @@ public class DeliveryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivary);
         addToolBar();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         addRecycleView(dummyContent());
     }
 
     private void addToolBar() {
         Toolbar secondToolBar = findViewById(R.id.delivery_toolbar);
-        secondToolBar.setTitle(R.string.facebook);
         setSupportActionBar(secondToolBar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private List<CharacterClass> dummyContent() {
